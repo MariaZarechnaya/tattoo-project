@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./style/swiper.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+
+    <!-- fonts for-->
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Swiper-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+   <!-- <script src="./js/swiper.min.js"></script>-->
+    <script type="module" defer src="./js/script.js"></script>
+
+
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="button__container">
+                <button type="button" class="header__mobile-nav-btn">
+                    <span class="header__mobile-nav-btn__icon"> <img src="./images/icons/burger-menu.png" alt=""  class="header__mobile-nav-img"> </span>
+                </button>
+            </div>
+
+            <div class="header__row">
+
+            <div class="header__logo"> 
+                <img src="./images/icons/tattoo-icon.png" alt=""> 
+                <p class="header__logo-time">Ежедневно с 9:00-21:00</p>
+
+            </div>
+
+            <nav class="header__navigation">
+                <ul class="header__list">
+                    <li class="header__list__item"><a data-goto=".about" class="header__list-a" href="#">Обо мне</a></li>
+                    <li class="header__list__item"><a data-goto=".gallery" class="header__list-a" href="#">Мои работы</a></li>
+                    <li class="header__list__item"><a data-goto=".price" class="header__list-a" href="#">Стоимость</a></li>
+                    <li class="header__list__item"><a data-modal class="header__list-a" href="#">Записаться</a></li>
+                    <li class="header__list__item"><a data-goto=".contacts" class="header__list-a" href="#">Контакты</a></li>
+                    <li class="header__list__item"><a  data-goto=".timer" class="header__list-a" href="#">Акции</a></li>
+
+                </ul>
+            </nav>
+        </div>      
+        </div>
+    </header>
+    <main>
+
+<!--Баннер-->
+ <section class="banner">
+            <div class="container">
+                <div class="banner__row">
+                <div class="banner__info">
+                    <div class="banner__title">
+                        <h1 class="banner__title-h1"> <span>неповторимый</span>  образ</h1>
+                    </div>
+                    <div class="banner__text">
+                        <p>Разработка индивидуального эскиза для каждого клиента</p>
+                    </div>
+                    <div class="banner__btn">
+                        <button class="btn" data-modal> Бесплатная консультация</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+ </section>
+
+<!--Секция ОБО МНЕ-->
+<section class="about" id="aboutId">
+    <div class="container">
+        
+            <div class="about__header">
+                <div class="about__title">
+                    <h2 class="about__title-h2"> моя профессия</h2>
+                    <h3 class="about__title-h3">cоздавать <span> <br>эстетику</span></h3>
+                </div>
+                <div class="about__slogan">
+                    <p>Я вкладываю в татуировки весь свой опыт и талант. Для меня важно, что бы каждая татуировка стала уникальным украшением, подходящим именно Тебе!</p>
+                        <p>Здесь ты можешь узнать обо мне больше,  ознакомиться с примерами моих работ, записаться на консультацию и рассчитать предварителоную стоимость татуировки</p> 
+                        
+                    </div>
+            </div>
+
+            <div class="about__content content">
+                <div class="content__title">
+                    <h2 class="content__why__me">Почему именно мой салон</h2>
+                </div>
+                <!--Грид контейнер-->
+                <div class="content__step__wrapper">
+                    <!--Карточка-->
+                <div class="content__step">
+                    <h3 class="content__step__heading" data-number="1"> Удобная студия</h3>
+                    <div class="content__step__text"> <p>Уютная студия, расположенная в шаговой доступности от метро, оборудованная всем необходимым</p> 
+                    </div>
+                    <div class="content__image__wrapper">
+                        <img class="img__step" src="./images/studio2.jpg" alt="">
+                    </div>
+                 </div>
+                 <!--Карточка2-->
+                <div class="content__step">
+                    <h3 class="content__step__heading" data-number="2">Безопасность</h3>
+                    <div class="content__step__text"> <p>Использую только одноразовые материалы, в кабинете проводится дезинфекция перед каждым клиентом</p> 
+                    </div>
+                    <div class="content__image__wrapper">
+                        <img class="img__step" src="./images/items.jpg" alt="">
+                    </div>
+                 </div>
+                 <!--Карточка3-->
+                <div class="content__step">
+                    <h3 class="content__step__heading" data-number="3">Качество</h3>
+                    <div class="content__step__text"> <p>Использую только качественные материалы. При соблюдении рекомендаций по уходу, татуировка требует минимальной коррекции</p> 
+                    </div>
+                    <div class="content__image__wrapper">
+                        <img class="img__step" src="./images/step-3.jpg" alt="">
+                    </div>
+                 </div>
+                </div>
+
+            </div>
+        
+    </div>
+</section>
+
+<!--Галерея-->
+<section class="gallery" id="galleryId">
+    <div class="container">
+        <!--Заголовок-->
+        <div class="gallery__title">
+            <h3>Галерея</h3>
+        </div>   
+    <div class="slider-container">
+        <!-- слайдер -->
+        <div class="swiper-container">
+                    <!--кнопки-->
+                    <div class="slider-buttons">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                
+            <div class="swiper-wrapper">
+                <!--карточки-->
+                <div class="swiper-slide card">
+                    <div class="card__img">
+                     <img class="card__image" src="./images/slide1.jpg" alt="">
+                    </div>
+                    </div>
+                <div class="swiper-slide card">
+                    <div class="card__img">
+                        <img class="card__image" src="./images/slide2.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card__img">
+                        <img class="card__image" src="./images/slide3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card__img">
+                        <img class="card__image" src="./images/slide4.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card__img">
+                        <img class="card__image" src="./images/slide5.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card__img">
+                        <img class="card__image" src="./images/slide6.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card__img">
+                        <img class="card__image" src="./images/slide7.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card__img">
+                        <img class="card__image" src="./images/slide8.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card__img">
+                        <img class="card__image" src="./images/slide9.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card__img">
+                        <img class="card__image" src="./images/slide10.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card__img">
+                        <img class="card__image" src="./images/slide11.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card__img">
+                        <img class="card__image" src="./images/slide12.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <!--Пагинация-->
+            <div class="swiper-pagination">
+            </div>
+        </div>
+    </div>
+
+    <!--остальные работы вне слайдера-->
+    <div class="gallery__show-more">
+        <div class="gallery__show-more-button">
+            <button class="gallery__btn btn">Смотреть всю галерею</button>
+        </div>
+        </div>
+
+
+    <div class="gallery__photo-images-container">
+        <!--грид контейнер-->
+        <div class="gallery__photo-images-block">
+        <!--грид элементы-->    
+        <div class="gallery__photo-images-item gallery__photo-images-item_main">
+            <a  href="./images/image-8-big.jpeg">
+            <img class="gallery__photo-images-img" src="./images/image-8.jpeg" alt=""> 
+        </a>
+        </div>
+
+        <div class="gallery__photo-images-item ">
+            <a href="./images/image-2-big.jpg">
+                <img class="gallery__photo-images-img" src="./images/image-2.jpg" alt="">
+            </a>
+        </div>
+
+        <div class="gallery__photo-images-item  ">
+            <a href="./images/image-3-big.jpg">
+            <img class="gallery__photo-images-img" src="./images/image-3.jpg" alt="">
+        </a>
+        </div>
+
+        <div class="gallery__photo-images-item">
+            <a href="./images/image-4-big.jpg">
+            <img class="gallery__photo-images-img" src="./images/image-4.jpg" alt="">
+        </a>
+        </div>
+
+        <div class="gallery__photo-images-item">
+            <a href="./images/image-5-big.jpeg">
+            <img class="gallery__photo-images-img" src="./images/image-5.jpeg" alt="">
+        </a>
+        </div>
+        <div class="gallery__photo-images-item">
+            <a href="./images/image-6-big.jpeg">
+            <img class="gallery__photo-images-img" src="./images/image-6.jpeg" alt="">
+        </a>
+        </div>
+        <div class="gallery__photo-images-item">
+            <a href="./images/image-7-big.jpeg">
+            <img class="gallery__photo-images-img" src="./images/image-7.jpeg" alt="">
+        </a>
+        </div>
+
+    </div>
+</div>
+</section>
+
+<!--СТОИМОСТЬ-->
+<section class="price" id="priceId">
+<div class="container">
+    <div class="price_title">
+        <h3 class="price_title-h3">Стоимость</h3>
+    </div>
+    <!--текст-->
+        <div class="price_text-info">
+            <ul class="price_list-text">
+                <li class="price_list-text-item"><p>Чем необычней и сложней ваши пожелания, тем интересней работать мастеру.
+                    Вы можете подойти к нам в студию без чёткого рисунка в голове – мы придумаем и создадим его с вами на месте</p></li>
+                <li class="price_list-text-item"><p> Минимальная стоимость татуировки 3 000 руб</p></li>
+                <li class="price_list-text-item"><p> Разработка эскиза от 1000 рублей в зависимости от размера и сложности. Предоплата за эскиз 50%</p></li>
+            </ul>
+        </div>
+            <!-- Таймер акций -->
+    <div class="price__timer timer">
+        <div class="timer__header">
+            <p> <span>Скидка на первый сеанс 10%!</span> </p>
+            <p>Акция продлится до 19 января 2023 года, успей записаться на сеанс по выгодной цене !</p>
+            
+        </div>
+        <div class="timer__body">
+            <p class="timer-body-text">До окончания акции:</p>
+            <div class="timer__number-wrapper">
+                <div class="timer__number-item">
+                    <p class="timer-number" data-days >00</p>
+                    <p>Дней</p>
+                </div>
+                <div class="timer__number-item">
+                    <p class="timer-number" data-hours >00</p>
+                    <p>Часов</p>
+                </div>
+                <div class="timer__number-item">
+                    <p class="timer-number" data-minutes >00</p>
+                    <p>Минут</p>
+                </div>
+                <div class="timer__number-item">
+                    <p class="timer-number" data-seconds >00</p>
+                    <p>Секунд</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+        <!--цены-->
+        <div class="price_info">
+            <div class="price_info-title"><h3 class="price_info-title-h3">Цены</h3></div>
+            <div class="price_info-item"><p>минимальная стоимость</p> <span>3000</span></div>
+            <div class="price_info-item"><p>разработка эскиза</p><span>от 1000</span></div>
+            <div class="price_info-item"><p>исправление/перекрытие</p><span>от 4000</span></div>
+            <div class="price_info-item"><p>коррекция татуировки </p><span>от 2000</span></div>
+        </div>
+
+        <!--калькулятор цены-->
+        <div class="price_calculator calculator">
+            <div class="calculator_title"> 
+                <h3 class="calculator_title-h3">Расчет стоимости татуировки</h3>
+            </div>
+            <div class="calculator_input">
+                <div class="calculator_input_row">
+                    <span>Высота (см) </span>
+                    <input type="number" class="calculator_input-height" id="input-number" placeholder="Введите число"  value="0">
+                </div>
+                <div class="calculator_input_row">
+                    <span>Ширина (см)</span>
+                    <input type="number" class="calculator_input-width" id="input-number" placeholder="Введите число" value="0">
+                </div>
+                <div class="calculator_input_row">
+                    <span>Площадь</span>
+                    <input type="number" class="calculator_input-sq" id="input-number" value="0">
+                </div>
+                <div class="calculator_input_row">
+                    <span>Цена*</span>
+                    <input type="number" class="calculator_input-sq" id="input-number" value="0">
+                </div>
+            </div>
+        </div>
+
+        <!--блок с кнопкой Узнать стоимость-->
+    <div class="price__show-more">
+        <div class="price__show-more-info"><p>* Узнать стоимость татуировки можно записавшись на бесплатную консультацию. Так же вы можете прикрепить пример понравившегося эскиза, указать примерный размер татуировки , а так же 
+            место нанесения</p></div>
+            <div class="price_button">
+                <button data-modal class="price-btn btn">Узнать стоимость</button>
+            </div>
+    </div>
+
+</div>
+</section>
+
+<!--КОНТАКТЫ-->
+<section class="contacts" id="contactsId">
+    <div class="container">
+        <div class="contacts__title">
+            <h3 class="contacts__title title">Контакты</h3>
+        </div>
+        <div class="contacts__body">
+            <div class="contacts__body-wrapper">
+            <div class="contacts__info">
+                <p> <span>Адрес салона</span> 
+                    <img class="contacts-adress-img" src="./images/icons/home.png" alt=""> ул. Академика Волгина, 15, Москва, 117485</p>
+                    <p> <img class="contacts-phone-img" src="./images/icons/telephone.png" alt="">Телефон: +4 495-999-999-99 </p>
+                <p>Как добраться от метро: </p>
+                <p>Последний вагон из центра, из дверей налево, на лестницу налево.
+                    Из перехода 10 метров прямо и поворот на право.
+                    Идём вдоль бульвара до крупного перекрёстка (ориентир - трамвайные пути). Не переходя дорогу поворачиваем направо, через несколько десятков метров ещё раз направо (во двор одно-подъездной башни - "Дом Художников" на Вавилова, 65А)
+                    Звоним в домофон 1211, поднимаемся на 12 этаж, из лифта налево, последняя дверь слева. </p>
+            </div>
+            <div class="contacts__map">  
+            </div>
+        </div>
+
+         <!--соцсети-->
+        <div class="contacts__social-networks social-networks">
+            <div class="social-networks__header">
+                <h4 class="social-networks-title">Мои социальные сети</h4>
+            </div>
+            
+            <div class="social-networks__wrapper">
+                <div class="social-networks__item">
+                    <a href="https://vk.com/"><img class="social-networks-icon" src="./images/icons/icon-vk.svg" alt=""></a>
+                    
+                </div>
+                <div class="social-networks__item">
+                    <a href="https://www.whatsapp.com/?lang=ru"> <img class="social-networks-icon" src="./images/icons/icon-watsapp.svg" alt=""></a>
+                   
+                </div>
+                <div class="social-networks__item">
+                    <a href="https://www.instagram.com/"><img class="social-networks-icon" src="./images/icons/icon-instagramm.svg" alt=""></a>
+                    
+                </div>
+                <div class="social-networks__item">
+                    <a href="https://www.youtube.com/"><img class="social-networks-icon" src="./images/icons/icon-youtube.svg" alt=""></a>
+                    
+                </div>
+            </div>
+        </div>
+
+        </div>
+    
+    </div>
+</section>
+
+<!--Модальные окна -->
+<div class="pop-up">
+    <div class="pop-up__wrapper">
+    <div class="pop-up_container">
+        <div class="pop-up__title">
+            <p>Записаться</p>
+        </div>
+        <div class="pop-up__body">
+            
+            <form action="./php/index.php" method="POST">
+                <input name = "user_name"class="pop-up-info" type="text" required placeholder="Введите имя" value="" data-formInfo>
+                <input name = "user_phone" class="pop-up-info" type="number" required placeholder="Номер телефона" value="" data-formInfo>
+                <textarea class="pop-up-textarea" placeholder=""  id="" maxlength="300" data-formInfo value="" name="user_comment">
+                </textarea>  
+                <button type="submit" class="pop-up-btn ">Отправить</button>          
+            </form>
+            <div class="message-container">
+            <p>Я обязательно свяжусь с вами в тот же день с <span>9.00-21.00</span> </p>
+        </div>
+            <div data-close class="pop-up__close">
+                &#10006;
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+
+<!---модалка для галереи-->
+<div class="pop-up__images">
+    <div class="pop-up__wrapper-images">
+    <div class="pop-up__img-big-container">
+   <img class="pop-up-change-img pop-up-main-img" src="" alt="#">
+        </div>
+    </div>
+</div>
+    </main>
+    <!-- скрипты -->
+    <script src="./js/priceCalculate.js"></script>
+    <script  type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="./js/map.js"></script>
+
+</body>
+</html>
+
